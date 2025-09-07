@@ -7,6 +7,5 @@ export type RootStackParamList = {
   EditarUsuario: { usuario: Usuario };
 };
 
-// Tipo genérico para usar nas telas
 export type ScreenProps<T extends keyof RootStackParamList> =
   NativeStackScreenProps<RootStackParamList, T>;
